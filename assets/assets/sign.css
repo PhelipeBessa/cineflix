@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+}
+body{
+    background: rgb(45,8,141);
+    background: radial-gradient(circle, rgba(45,8,141,1) 0%, rgba(35,9,47,1) 100%);
+    height: 100vh;
+    font-family: 'Questrial', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    background: #18032744;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo img{
+    height: 30px;
+}
+.signin{
+    position: absolute;
+    right: 20px;
+}
+.signin a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #BAC7FF;
+}
+main{
+    width: 55vw;
+    margin: 0 auto;
+    padding: 10vh 2.5vw;
+    color: #F0F0F0;
+    box-sizing: border-box;
+}
+legend{
+    text-align: center;
+}
+legend h1{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+legend p{
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 22px;
+    color: #c8c8c8;
+    justify-content: space-between;
+}
+#nome{
+    left: 0;
+}
+#sobrenome{
+    right: 0;
+}
+#nome, #sobrenome{
+    width: 22vw;
+    height: 30px;
+}
+#email, #senha{
+    width: 50vw;
+    height: 30px;
+}
+.input{
+    border: 0;
+    border-bottom: 2px solid #999999;
+    background: none;
+    color: #999999;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    /* -webkit-appearance: none; */
+    border-radius: 0;
+    margin-top: 2.5em;
+}
+.input:focus{
+    border-bottom: 2px solid #9a35ef;
+}
+.input::placeholder{
+    color: transparent;
+}
+.nome{
+    pointer-events: none;
+    position: absolute;
+    top: 1.5em;
+    left: .1em;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+.sobrenome{
+    pointer-events: none;
+    position: absolute;
+    top: 1.5em;
+    left: 17.3em;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+.email{
+    pointer-events: none;
+    position: absolute;
+    top: 5.2em;
+    left: .1em;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+.senha{
+    pointer-events: none;
+    position: absolute;
+    top: 8.8em;
+    left: .1em;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+.input:focus + .nome, .input:not(:placeholder-shown) + .nome{
+    font-size: 13px;
+    margin-top: .8em;
+    left: .1em;
+}
+.input:focus + .sobrenome, .input:not(:placeholder-shown) + .sobrenome{
+    font-size: 13px;
+    margin-top: .8em;
+    left: 29.3em;
+}
+.input:focus + .email, .input:not(:placeholder-shown) + .email{
+    font-size: 13px;
+    margin-top: 2.8em;
+    left: .1em;
+}
+.input:focus + .senha, .input:not(:placeholder-shown) + .senha{
+    font-size: 13px;
+    margin-top: 5.8em;
+    left: .1em;
+}
+form > p{
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    margin-top: -1.8em;
+}
+.termos{
+    width: 50vw;
+    padding: 25px 40px;
+    background: rgb(56,26,109);
+    background: linear-gradient(135deg, rgba(56,26,109,1) 0%, rgba(77,50,122,0.7147233893557423) 100%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #F0F0F0;
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.termos a{
+    color: #BAC7FF;
+    text-decoration: none;
+}
+button{
+    margin-top: 3em;
+    width: 20vw;
+    height: 3em;
+    background: #7B2ABF;
+    color: #F0F0F0;
+    border: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10vw;
+    cursor: pointer;
+    box-shadow: -7px 7px 9px #00000041,
+                7px 7px 7px #00000041;
+}
+button:hover{
+    background: #9a35ef;
+}
+footer{
+    height: 5em;
+    background: #0C0531;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+footer > span > a{
+    text-decoration: none;
+    color: #9E86FF;
+}

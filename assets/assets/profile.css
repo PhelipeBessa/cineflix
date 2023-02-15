@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+body{
+    background: rgb(30,30,30);
+    background: linear-gradient(145deg, rgba(30,30,30,1) 27%, rgba(45,23,99,1) 75%);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B2B2B2;
+}
+.logo{
+    width: 150px;
+}
+main{
+    height: 80vh;
+}
+.head-profile{
+    color: #B2B2B2;
+    text-align: center;
+    margin-top: 5vh;
+}
+.head-profile h1{
+    font-size: 42px;
+}
+.profile{
+    margin-top: 10vh;
+    gap: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prof{
+    width: 158px;
+    text-align: center;
+}
+.prof img{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, #6D8AB4, #2524A6) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+}
+.prof a{
+    text-decoration: none;
+    color: #B2B2B2;
+    font-weight: 500;
+}
+.manage{
+    bottom: 30px;
+    position: fixed;
+    text-align: center;
+    margin: 0 auto;
+    width: 100vw;
+}
+.manage a{
+    color: #B2B2B2;
+    text-decoration: none;
+    font-size: 20px;
+}
